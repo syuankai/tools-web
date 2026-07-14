@@ -8,6 +8,13 @@
     <meta name="renderer" content="webkit">
     <meta name="referrer" content="no-referrer-when-downgrade">
 
+    <!-- 强制禁用所有缓存层：HTML/响应头失败时仍有兜底
+         这套 meta 是给那些不严格遵守 Cache-Control 的中间代理/老浏览器看的
+         主流浏览器已靠 _headers 的 no-store 处理 -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
     <!-- DNS 预连接（优先级更高） -->
     <link rel="preconnect" href="https://image.pollinations.ai" crossorigin>
     <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin>
@@ -63,7 +70,7 @@
     </script>
 
     <title>开发者工具箱 - 一个开源免费的工具站 | MD5加密 JSON格式化 二维码 AI绘画 正则测试 时间戳转换 Base64 139+工具</title>
-    <script type="module" crossorigin src="/js/index-0972ccf9.js"></script>
+    <script type="module" crossorigin src="/js/index-c2f05aa2.js"></script>
     <link rel="modulepreload" crossorigin href="/js/vue-vendor-b0e0f862.js">
     <link rel="preload" href="/css/index-5c787169.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/index-5c787169.css"></noscript>
   </head>
